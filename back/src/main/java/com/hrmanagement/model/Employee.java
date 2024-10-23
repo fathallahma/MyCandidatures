@@ -23,9 +23,10 @@ public class Employee {
             strategy = GenerationType.IDENTITY,
             generator = "employee_sequence"
     )
-    private long id;
+    private Long id;
     private String firstName;
     private String lastName;
     private String email;
     private String password;
+    private String role;
 }
