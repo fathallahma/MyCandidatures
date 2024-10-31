@@ -1,4 +1,4 @@
-package com.hrmanagement.model;
+package com.myCandidatures.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,21 +7,21 @@ import lombok.Data;
 //for hibernate
 @Entity
 //for database
-@Table(name = "Employee")
+@Table(name = "User")
 @Data
 @AllArgsConstructor
-public class Employee {
+public class User {
 
     @Id
     @SequenceGenerator(
-            name = "employee_sequence",
-            sequenceName = "EMPLOYEE_SEQUENCE_ID",
+            name = "user_sequence",
+            sequenceName = "USER_SEQUENCE_ID",
             initialValue = 1,
             allocationSize = 1
     )
     @GeneratedValue(
             strategy = GenerationType.IDENTITY,
-            generator = "employee_sequence"
+            generator = "user_sequence"
     )
     private Long id;
     private String firstName;

@@ -1,4 +1,4 @@
-package com.hrmanagement;
+package com.myCandidatures;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
